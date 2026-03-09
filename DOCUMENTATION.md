@@ -11,7 +11,7 @@ This class extends from Stats, so any value or function in stats will also be ac
 ### Properties
 | Property | Type | Default | Description |
 | :--- | :--- | :--- | :--- |
-| **max_hp** | `` | `100` | Sets the maximum HP of the unit |
+| **max_hp** | `int` | `100` | Sets the maximum HP of the unit |
 | **hp** | `Variant` | `100` | Sets the start HP of the unit |
 
 ### Methods
@@ -39,7 +39,7 @@ This resource is used to define stats. This can be any kind of stats. In princip
 ### Properties
 | Property | Type | Default | Description |
 | :--- | :--- | :--- | :--- |
-| **stats** | `Dictionary` | `{...}` | Here you can define what stats your unit should have. IMPORTANT! Value needs to be a float! The key is the name of the stat |
+| **stats** | `Dictionary` | `Dictionary` | Here you can define what stats your unit should have. IMPORTANT! Value needs to be a float! The key is the name of the stat |
 
 ### Methods
 | Method | Returns | Description |
