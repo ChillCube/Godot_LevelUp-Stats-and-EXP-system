@@ -1,7 +1,14 @@
 # Godot_LevelUp-Stats-and-EXP-system API Reference
-Generated: 2026-03-09
+Generated on: 2026-03-09
 
 A system for level ups, stats and exp for godot
+
+### 📦 Dependencies
+| Addon | Repository |
+| :--- | :--- |
+| Godot_SmoothMovement | [Link](https://github.com/ChillCube/Godot_SmoothMovement) |
+
+---
 
 ## Class: StatsAndHealth
 **Inherits:** [`Stats`](#class-Stats)
@@ -35,7 +42,7 @@ This resource is used to define stats. This can be any kind of stats. In princip
 ### Properties
 | Property | Type | Default | Description |
 | :--- | :--- | :--- | :--- |
-| **stats** | ` D` | `{ "Attack" : 6, "Defense" : 8, "Speed" : 5, "Luck" : 7 }` | Here you can define what stats your unit should have. IMPORTANT! Value needs to be a float! The key is the name of the stat |
+| **stats** | `Dictionary` | `{ "Attack" : 6, "Defense" : 8, "Speed" : 5, "Luck" : 7 }` | Here you can define what stats your unit should have. IMPORTANT! Value needs to be a float! The key is the name of the stat |
 
 ### Methods
 | Method | Returns | Description |
