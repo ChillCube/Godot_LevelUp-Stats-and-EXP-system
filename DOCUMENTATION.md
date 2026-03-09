@@ -3,13 +3,6 @@ Generated: 2026-03-09
 
 A system for level ups, stats and exp for godot
 
-### 📦 Dependencies
-| Addon | Repository |
-| :--- | :--- |
-| Godot_SmoothMovement | [GitHub](https://github.com/ChillCube/Godot_SmoothMovement) |
-
----
-
 ## Class: StatsAndHealth
 **Inherits:** [`Stats`](#class-Stats)
 
@@ -31,14 +24,6 @@ This class extends from Stats, so any value or function in stats will also be ac
 | **receive_damage()** | `void` | method that can be used by other scripts to apply damage to this unit |
 | **save_hp()** | `void` | method that can be used to save the current HP to a save file |
 | **load_hp()** | `float` | method that can be used to load the current HP from a save file |
-
----
-
-## Class: TestNode
-**Inherits:** [`SmoothMovement`](https://github.com/ChillCube/Godot_SmoothMovement/blob/main/DOCUMENTATION.md#class-SmoothMovement)
-
-Just for testing the documentation script
-Let's see if it works
 
 ---
 
