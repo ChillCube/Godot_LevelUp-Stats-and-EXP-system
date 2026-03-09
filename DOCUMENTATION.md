@@ -1,17 +1,17 @@
 # Godot_LevelUp-Stats-and-EXP-system API Reference
-Generated on: 2026-03-09
+Generated: 2026-03-09
 
 A system for level ups, stats and exp for godot
 
 ### 📦 Dependencies
-| Addon | Repository |
-| :--- | :--- |
-| Godot_SmoothMovement | [Link](https://github.com/ChillCube/Godot_SmoothMovement) |
+| Class | Addon | Repository |
+| :--- | :--- | :--- |
+| [`SmoothMovement`](https://github.com/ChillCube/Godot_SmoothMovement/blob/main/DOCUMENTATION.md#class-smoothmovement) | Godot_SmoothMovement | [Repo](https://github.com/ChillCube/Godot_SmoothMovement) |
 
 ---
 
 ## Class: StatsAndHealth
-**Inherits:** [`Stats`](#class-Stats)
+**Inherits:** [`Stats`](#class-stats)
 
 This class extends from Stats, so any value or function in stats will also be accessible here. What's new here is that it also adds methods for handling HP.
 
@@ -53,7 +53,7 @@ This resource is used to define stats. This can be any kind of stats. In princip
 ---
 
 ## Class: LevelUpResource
-**Inherits:** [`StatsAndHealth`](#class-StatsAndHealth)
+**Inherits:** [`StatsAndHealth`](#class-statsandhealth)
 
 This class extends from the StatsAndHealth class and therefor has access to all the same functions and values. This class adds Level Up and EXP system, as well as methods for increasing stats per level up. This is recommended to be used for RPG's for playable characters. 
 
