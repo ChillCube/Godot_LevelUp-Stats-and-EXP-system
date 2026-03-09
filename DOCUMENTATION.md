@@ -3,6 +3,13 @@ Generated: 2026-03-09
 
 A system for level ups, stats and exp for godot
 
+## 🔗 Dependencies
+
+
+### Manual
+# Add non-Godot dependencies below
+---
+
 ## Class: StatsAndHealth
 
 This class extends from Stats, so any value or function in stats will also be accessible here. What's new here is that it also adds methods for handling HP.
