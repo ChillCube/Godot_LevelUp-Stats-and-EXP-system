@@ -35,6 +35,14 @@ This class extends from Stats, so any value or function in stats will also be ac
 
 ---
 
+## Class: TestNode
+**Inherits:** [`SmoothMovement`](https://docs.godotengine.org/en/stable/classes/class_smoothmovement.html)
+
+Just for testing the documentation script
+Let's see if it works
+
+---
+
 ## Class: Stats
 **Inherits:** [`Resource`](https://docs.godotengine.org/en/stable/classes/class_resource.html)
 
