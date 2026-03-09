@@ -11,7 +11,7 @@ A system for level ups, stats and exp for godot
 ---
 
 ## Class: StatsAndHealth
-**Inherits:** [Stats](#class-stats)
+**Inherits:** [Stats](https://docs.godotengine.org/en/stable/classes/class_stats.html)
 
 This class extends from Stats, so any value or function in stats will also be accessible here. What's new here is that it also adds methods for handling HP.
 
@@ -60,7 +60,7 @@ This resource is used to define stats. This can be any kind of stats. In princip
 ---
 
 ## Class: LevelUpResource
-**Inherits:** [StatsAndHealth](#class-statsandhealth)
+**Inherits:** [StatsAndHealth](https://docs.godotengine.org/en/stable/classes/class_statsandhealth.html)
 
 This class extends from the StatsAndHealth class and therefor has access to all the same functions and values. This class adds Level Up and EXP system, as well as methods for increasing stats per level up. This is recommended to be used for RPG's for playable characters. 
 
