@@ -3,12 +3,6 @@ Generated: 2026-03-09
 
 A system for level ups, stats and exp for godot
 
-### 🐧 Linux / MacOS
-To add this to your project, copy paste this command into terminal at the root of your project:
-```bash
-clone-gd-addon https://github.com/ChillCube/Godot_LevelUp-Stats-and-EXP-system.git
-```
-
 ## Class: StatsAndHealth
 
 This class extends from Stats, so any value or function in stats will also be accessible here. What's new here is that it also adds methods for handling HP.
