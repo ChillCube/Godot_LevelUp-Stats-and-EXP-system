@@ -39,7 +39,7 @@ This resource is used to define stats. This can be any kind of stats. In princip
 ### Properties
 | Property | Type | Default | Description |
 | :--- | :--- | :--- | :--- |
-| **stats** | `Dictionary` | `Dictionary` | Here you can define what stats your unit should have. IMPORTANT! Value needs to be a float! The key is the name of the stat |
+| **stats** | `Dictionary` | `{## This resource is used to define stats. This can be any kind of stats. In principle can this be used to store and save any kind of series of values that may change during gameplay and need to be saved. extends Resourceclass_name Stats@export var stats : Dictionary = { ## Here you can define what stats your unit should have. IMPORTANT! Value needs to be a float! The key is the name of the stat "Attack" : 6, "Defense" : 8, "Speed" : 5, "Luck" : 7}` | Here you can define what stats your unit should have. IMPORTANT! Value needs to be a float! The key is the name of the stat |
 
 ### Methods
 | Method | Returns | Description |
