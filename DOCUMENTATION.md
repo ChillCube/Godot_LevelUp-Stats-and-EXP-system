@@ -23,14 +23,6 @@ This class extends from Stats, so any value or function in stats will also be ac
 | **save_hp()** | `void` | method that can be used to save the current HP to a save file |
 | **load_hp()** | `float` | method that can be used to load the current HP from a save file |
 
-### Signals
-| Signal | Description |
-| :--- | :--- |
-| **took_damage** | emitted whenever the unit took damage |
-| **gained_health** | emitted whenever the unit gains health |
-| **fully_restored** | emitted whenever the health is restored to max |
-| **died** | emitted when the units HP goes to 0 |
-
 ---
 
 ## Class: Stats
@@ -64,10 +56,5 @@ This class extends from the StatsAndHealth class and therefor has access to all 
 | **min_stat_growth** | `int` | `0` | sets the minimum for how much stats can grow |
 | **increase_stats_by_stats** | `bool` | `false` | Increase stats based on how large the current stat is (the higher the stat, the more likely it is to increase) |
 | **stat_points_allocated_per_level_up** | `int` | `5` | Decides how many stat points in total should be used when levelling up for upgrading the stats. |
-
-### Signals
-| Signal | Description |
-| :--- | :--- |
-| **level_up** | emitted when the unit levels up |
 
 ---
