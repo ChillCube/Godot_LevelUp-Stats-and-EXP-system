@@ -3,15 +3,7 @@ Generated: 2026-03-09
 
 A system for level ups, stats and exp for godot
 
-### 📦 Dependencies
-| Source | Reference | Repository |
-| :--- | :--- | :--- |
-| Code | [`SmoothMovement`](https://github.com/ChillCube/Godot_SmoothMovement/blob/main/DOCUMENTATION.md#class-smoothmovement) | [Repo](https://github.com/ChillCube/Godot_SmoothMovement) |
-
----
-
 ## Class: StatsAndHealth
-**Inherits:** [`Stats`](#class-stats)
 
 This class extends from Stats, so any value or function in stats will also be accessible here. What's new here is that it also adds methods for handling HP.
 
@@ -24,24 +16,24 @@ This class extends from Stats, so any value or function in stats will also be ac
 ### Signals
 | Signal | Description |
 | :--- | :--- |
-| **took_damage** |  emitted whenever the unit took damage |
-| **gained_health** |  emitted whenever the unit gains health |
-| **fully_restored** |  emitted whenever the health is restored to max |
-| **died** |  emitted when the units HP goes to 0 |
+| `took_damage` |  emitted whenever the unit took damage |
+| `gained_health` |  emitted whenever the unit gains health |
+| `fully_restored` |  emitted whenever the health is restored to max |
+| `died` |  emitted when the units HP goes to 0 |
 
 ### Methods
 | Method | Returns | Description |
 | :--- | :--- | :--- |
-| **gain_health()** | `void` |  method that can be used by other nodes to increase the health of this unit |
+| **** | `void` |  This class extends from Stats, so any value or function in stats will also be accessible here. What's new here is that it also adds methods for handling HP. |
+| **gain_health(amount ** | `void` |  method that can be used by other nodes to increase the health of this unit |
 | **fully_restore()** | `void` |  method that can be used by other scripts to fully restore this unit |
-| **receive_damage()** | `void` |  method that can be used by other scripts to apply damage to this unit |
-| **save_hp()** | `void` |  method that can be used to save the current HP to a save file |
-| **load_hp()** | `float` |  method that can be used to load the current HP from a save file |
+| **receive_damage(amount ** | `void` |  method that can be used by other scripts to apply damage to this unit |
+| **save_hp(entity_name_or_ID ** | `void` |  method that can be used to save the current HP to a save file |
+| **load_hp(entity_name_or_ID : String) -> float:** | `float` |  method that can be used to load the current HP from a save file |
 
 ---
 
 ## Class: Stats
-**Inherits:** [`Resource`](https://docs.godotengine.org/en/stable/classes/class_resource.html)
 
 This resource is used to define stats. This can be any kind of stats. In principle can this be used to store and save any kind of series of values that may change during gameplay and need to be saved. 
 
@@ -53,13 +45,12 @@ This resource is used to define stats. This can be any kind of stats. In princip
 ### Methods
 | Method | Returns | Description |
 | :--- | :--- | :--- |
-| **save_stats()** | `void` |  This function can be used to save the stats into a save file |
-| **load_stats()** | `void` |  this function can be used load the stats from a save file.  |
+| **save_stats(entity_name_or_ID ** | `void` |  This function can be used to save the stats into a save file |
+| **load_stats(entity_name_or_ID ** | `void` |  this function can be used load the stats from a save file.  |
 
 ---
 
 ## Class: LevelUpResource
-**Inherits:** [`StatsAndHealth`](#class-statsandhealth)
 
 This class extends from the StatsAndHealth class and therefor has access to all the same functions and values. This class adds Level Up and EXP system, as well as methods for increasing stats per level up. This is recommended to be used for RPG's for playable characters. 
 
@@ -79,7 +70,19 @@ This class extends from the StatsAndHealth class and therefor has access to all 
 ### Signals
 | Signal | Description |
 | :--- | :--- |
-| **level_up** |  emitted when the unit levels up |
+| `level_up` |  emitted when the unit levels up |
+
+### Methods
+| Method | Returns | Description |
+| :--- | :--- | :--- |
+| **** | `void` |  This class extends from the StatsAndHealth class and therefor has access to all the same functions and values. This class adds Level Up and EXP system, as well as methods for increasing stats per level up. This is recommended to be used for RPG's for playable characters.  |
+| **** | `void` |  You can use this function to let nodes increase the exp of the unit. |
+| **** | `void` |  this function is used to save the current level onto a save file |
+| **** | `void` |  this function is used to load the current level from the save file into the game |
+| **** | `void` |  this function is used to save the current amount of exp onto a save file |
+| **** | `void` |  this function is used to load the exp from the save file.  |
+| **** | `void` |  this function is used to save the current max exp onto a save file |
+| **** | `void` |  this function is used to load the current max exp from a save file. In most cases it is recommended to use "load_level_health_and_stats()" instead.  |
 
 ---
 
