@@ -3,7 +3,7 @@ Generated: 2026-03-09
 
 A system for level ups, stats and exp for godot
 
-## 📦 Dependencies
+### 📦 Dependencies
 
 | Source | Reference | Repository |
 | :--- | :--- | :--- |
