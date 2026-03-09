@@ -7,12 +7,6 @@ A system for level ups, stats and exp for godot
 
 This class extends from Stats, so any value or function in stats will also be accessible here. What's new here is that it also adds methods for handling HP.
 
-### ⚙️ Inspector Variables
-| Property | Type | Default | Description |
-| :--- | :--- | :--- | :--- |
-| **max_hp** | `int` | `100` | Sets the maximum HP of the unit |
-| **hp** | `Variant` | `100` | Sets the start HP of the unit |
-
 ---
 
 ## Class: Stats
