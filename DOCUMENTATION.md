@@ -7,29 +7,11 @@ A system for level ups, stats and exp for godot
 
 This class extends from Stats, so any value or function in stats will also be accessible here. What's new here is that it also adds methods for handling HP.
 
-### ⚙️ Inspector Variables (Exported)
+### ⚙️ Inspector Variables
 | Property | Type | Default | Description |
 | :--- | :--- | :--- | :--- |
 | **max_hp** | `int` | `100` | Sets the maximum HP of the unit |
 | **hp** | `Variant` | `100` | Sets the start HP of the unit |
-
-### 🔔 Signals
-| Signal | Arguments | Description |
-| :--- | :--- | :--- |
-| **took_damage** | - |  emitted whenever the unit took damage |
-| **gained_health** | - |  emitted whenever the unit gains health |
-| **fully_restored** | - |  emitted whenever the health is restored to max |
-| **died** | - |  emitted when the units HP goes to 0 |
-
-### 🛠️ Methods
-| Method | Arguments | Returns | Description |
-| :--- | :--- | :--- | :--- |
-| **()** | - | `void` |  This class extends from Stats, so any value or function in stats will also be accessible here. What's new here is that it also adds methods for handling HP. |
-| **gain_health()** | `amount : float` | `void` |  method that can be used by other nodes to increase the health of this unit |
-| **fully_restore()** | - | `void` |  method that can be used by other scripts to fully restore this unit |
-| **receive_damage()** | `amount : float` | `void` |  method that can be used by other scripts to apply damage to this unit |
-| **save_hp()** | `entity_name_or_ID : String` | `void` |  method that can be used to save the current HP to a save file |
-| **load_hp()** | `entity_name_or_ID : String` | `float` |  method that can be used to load the current HP from a save file |
 
 ---
 
@@ -37,16 +19,16 @@ This class extends from Stats, so any value or function in stats will also be ac
 
 This resource is used to define stats. This can be any kind of stats. In principle can this be used to store and save any kind of series of values that may change during gameplay and need to be saved. 
 
-### ⚙️ Inspector Variables (Exported)
+### ⚙️ Inspector Variables
 | Property | Type | Default | Description |
 | :--- | :--- | :--- | :--- |
-| **stats** | `Dictionary` | `{` | Here you can define what stats your unit should have. IMPORTANT! Value needs to be a float! The key is the name of the stat |
+| **stats** | `Dictionary` | `{ ` | Here you can define what stats your unit should have. IMPORTANT! Value needs to be a float! The key is the name of the stat |
 
 ### 🛠️ Methods
 | Method | Arguments | Returns | Description |
 | :--- | :--- | :--- | :--- |
-| **save_stats()** | `entity_name_or_ID : String` | `void` |  This function can be used to save the stats into a save file |
-| **load_stats()** | `entity_name_or_ID : String` | `void` |  this function can be used load the stats from a save file.  |
+| **save_stats()** | <code><font color="#56b6c2">entity_name_or_ID : String</font></code> | `void` |  This function can be used to save the stats into a save file |
+| **load_stats()** | <code><font color="#56b6c2">entity_name_or_ID : String</font></code> | `void` |  this function can be used load the stats from a save file.  |
 
 ---
 
@@ -54,14 +36,15 @@ This resource is used to define stats. This can be any kind of stats. In princip
 
 This class extends from the StatsAndHealth class and therefor has access to all the same functions and values. This class adds Level Up and EXP system, as well as methods for increasing stats per level up. This is recommended to be used for RPG's for playable characters. 
 
-### ⚙️ Inspector Variables (Exported)
+### ⚙️ Inspector Variables
 | Property | Type | Default | Description |
 | :--- | :--- | :--- | :--- |
 | **level** | `int` | `1` | sets the level that the unit starts out with |
 | **exp** | `float` | `0` | sets the amount of exp that the unit starts out with  |
 | **max_exp** | `float` | `100` | sets the initial maximum amount of EXP that the unit needs for the next level up |
-| **max_exp_growth** | `float` | `0.1` | How much the max_exp will grow by each level up (for example: 0.1 = 10% increase, 2 = 200% increase) |
-| **increase_stats_randomly** | `bool` | `false` | if enabled, this will randomly choose stats to increase |
+| **max_exp_growth** | `float` | `0.1 ` | How much the max_exp will grow by each level up (for example: 0.1 = 10% increase, 2 = 200% increase) |
+| **--- STAT INCREASE ---** | | | |
+| **increase_stats_randomly** | `bool` | `false ` | if enabled, this will randomly choose stats to increase |
 | **max_stat_growth** | `int` | `5` | sets the maximum for how much a stats can grow |
 | **min_stat_growth** | `int` | `0` | sets the minimum for how much stats can grow |
 | **increase_stats_by_stats** | `bool` | `false` | Increase stats based on how large the current stat is (the higher the stat, the more likely it is to increase) |
