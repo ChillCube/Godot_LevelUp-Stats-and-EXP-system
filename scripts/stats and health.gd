@@ -11,7 +11,7 @@ signal died ## emitted when the units HP goes to 0
 	set(new_value):
 		stats["max_hp"] = new_value;
 		max_hp = new_value;
-@export var hp = 100;
+@export var hp = 100; ## Sets the start HP of the unit
 
 func gain_health(amount : float): ## method that can be used by other nodes to increase the health of this unit
 	emit_signal("gained_health", amount)

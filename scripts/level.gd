@@ -2,9 +2,9 @@
 extends StatsAndHealth
 class_name LevelUpResource
 
-@export var level = 1; ## sets the level that the unit starts out with
-@export var exp = 0; ## sets the amount of exp that the unit starts out with 
-@export var max_exp = 100; ## sets the initial maximum amount of EXP that the unit needs for the next level up
+@export var level : int = 1; ## sets the level that the unit starts out with
+@export var exp : float = 0; ## sets the amount of exp that the unit starts out with 
+@export var max_exp : float = 100; ## sets the initial maximum amount of EXP that the unit needs for the next level up
 
 @export var max_exp_growth : float = 0.1 ## How much the max_exp will grow by each level up (for example: 0.1 = 10% increase, 2 = 200% increase)
 
@@ -15,7 +15,7 @@ class_name LevelUpResource
 @export var min_stat_growth : int = 0; ## sets the minimum for how much stats can grow
 @export_subgroup("base stat growth")
 @export var increase_stats_by_stats : bool = false; ## Increase stats based on how large the current stat is (the higher the stat, the more likely it is to increase)
-@export var stat_points_allocated_per_level_up = 5; ## Decides how many stat points in total should be used when levelling up for upgrading the stats. 
+@export var stat_points_allocated_per_level_up : int = 5; ## Decides how many stat points in total should be used when levelling up for upgrading the stats. 
 
 signal level_up ## emitted when the unit levels up
 
