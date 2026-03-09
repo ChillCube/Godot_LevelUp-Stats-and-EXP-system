@@ -4,9 +4,9 @@ Generated: 2026-03-09
 A system for level ups, stats and exp for godot
 
 ### 📦 Dependencies
-| Class | Addon | Repository |
+| Source | Reference | Repository |
 | :--- | :--- | :--- |
-| [`SmoothMovement`](https://github.com/ChillCube/Godot_SmoothMovement/blob/main/DOCUMENTATION.md#class-smoothmovement) | Godot_SmoothMovement | [Repo](https://github.com/ChillCube/Godot_SmoothMovement) |
+| Code | [`SmoothMovement`](https://github.com/ChillCube/Godot_SmoothMovement/blob/main/DOCUMENTATION.md#class-smoothmovement) | [Repo](https://github.com/ChillCube/Godot_SmoothMovement) |
 
 ---
 
