@@ -11,7 +11,8 @@ This class extends from Stats, so any value or function in stats will also be ac
 ### Properties
 | Property | Type | Default | Description |
 | :--- | :--- | :--- | :--- |
-| **max_hp** | `` | `100:` | Sets the maximum HP of the unit |
+| **max_hp** | `` | `100` | Sets the maximum HP of the unit |
+| **hp** | `Variant` | `100` | Sets the start HP of the unit |
 
 ### Methods
 | Method | Returns | Description |
@@ -38,7 +39,7 @@ This resource is used to define stats. This can be any kind of stats. In princip
 ### Properties
 | Property | Type | Default | Description |
 | :--- | :--- | :--- | :--- |
-| **stats** | `Dictionary` | `{` | Here you can define what stats your unit should have. IMPORTANT! Value needs to be a float! The key is the name of the stat |
+| **stats** | `Dictionary` | `{...}` | Here you can define what stats your unit should have. IMPORTANT! Value needs to be a float! The key is the name of the stat |
 
 ### Methods
 | Method | Returns | Description |
@@ -54,15 +55,15 @@ This class extends from the StatsAndHealth class and therefor has access to all 
 ### Properties
 | Property | Type | Default | Description |
 | :--- | :--- | :--- | :--- |
-| **level** | `Variant` | `1` | sets the level that the unit starts out with |
-| **exp** | `Variant` | `0` | sets the amount of exp that the unit starts out with |
-| **max_exp** | `Variant` | `100` | sets the initial maximum amount of EXP that the unit needs for the next level up |
+| **level** | `int` | `1` | sets the level that the unit starts out with |
+| **exp** | `float` | `0` | sets the amount of exp that the unit starts out with |
+| **max_exp** | `float` | `100` | sets the initial maximum amount of EXP that the unit needs for the next level up |
 | **max_exp_growth** | `float` | `0.1` | How much the max_exp will grow by each level up (for example: 0.1 = 10% increase, 2 = 200% increase) |
 | **increase_stats_randomly** | `bool` | `false` | if enabled, this will randomly choose stats to increase |
 | **max_stat_growth** | `int` | `5` | sets the maximum for how much a stats can grow |
 | **min_stat_growth** | `int` | `0` | sets the minimum for how much stats can grow |
 | **increase_stats_by_stats** | `bool` | `false` | Increase stats based on how large the current stat is (the higher the stat, the more likely it is to increase) |
-| **stat_points_allocated_per_level_up** | `Variant` | `5` | Decides how many stat points in total should be used when levelling up for upgrading the stats. |
+| **stat_points_allocated_per_level_up** | `int` | `5` | Decides how many stat points in total should be used when levelling up for upgrading the stats. |
 
 ### Signals
 | Signal | Description |
