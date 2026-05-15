@@ -1,38 +1,7 @@
 # Godot_LevelUp-Stats-and-EXP-system API Reference
-Generated: 2026-03-10
+Generated: 2026-05-15
 
 A system for level ups, stats and exp for godot
-
-## Class: StatsAndHealth
-**Inherits:** [Stats](#class-stats)
-
-This class extends from Stats, so any value or function in stats will also be accessible here. What's new here is that it also adds methods for handling HP.
-
-### ⚙️ Inspector Variables (Exported)
-| Property | Type | Default | Description |
-| :--- | :--- | :--- | :--- |
-| **max_hp** | `int` | `100` | Sets the maximum HP of the unit |
-| **hp** | `Variant` | `100` | Sets the start HP of the unit |
-
-### 🔔 Signals
-| Signal | Arguments | Description |
-| :--- | :--- | :--- |
-| **took_damage** | - |  emitted whenever the unit took damage |
-| **gained_health** | - |  emitted whenever the unit gains health |
-| **fully_restored** | - |  emitted whenever the health is restored to max |
-| **died** | - |  emitted when the units HP goes to 0 |
-
-### 🛠️ Methods
-| Method | Arguments | Returns | Description |
-| :--- | :--- | :--- | :--- |
-| **()** | - | `void` |  This class extends from Stats, so any value or function in stats will also be accessible here. What's new here is that it also adds methods for handling HP. |
-| **gain_health()** | `amount : float` | `void` |  method that can be used by other nodes to increase the health of this unit |
-| **fully_restore()** | - | `void` |  method that can be used by other scripts to fully restore this unit |
-| **receive_damage()** | `amount : float` | `void` |  method that can be used by other scripts to apply damage to this unit |
-| **save_hp()** | `entity_name_or_ID : String` | `void` |  method that can be used to save the current HP to a save file |
-| **load_hp()** | `entity_name_or_ID : String` | `float` |  method that can be used to load the current HP from a save file |
-
----
 
 ## Class: Stats
 **Inherits:** [Resource](https://docs.godotengine.org/en/stable/classes/class_resource.html)
@@ -86,6 +55,37 @@ This class extends from the StatsAndHealth class and therefor has access to all 
 | **()** | - | `void` |  this function is used to load the exp from the save file.  |
 | **()** | - | `void` |  this function is used to save the current max exp onto a save file |
 | **()** | - | `void` |  this function is used to load the current max exp from a save file. In most cases it is recommended to use "load_level_health_and_stats()" instead.  |
+
+---
+
+## Class: StatsAndHealth
+**Inherits:** [Stats](#class-stats)
+
+This class extends from Stats, so any value or function in stats will also be accessible here. What's new here is that it also adds methods for handling HP.
+
+### ⚙️ Inspector Variables (Exported)
+| Property | Type | Default | Description |
+| :--- | :--- | :--- | :--- |
+| **max_hp** | `int` | `100` | Sets the maximum HP of the unit |
+| **hp** | `Variant` | `100` | Sets the start HP of the unit |
+
+### 🔔 Signals
+| Signal | Arguments | Description |
+| :--- | :--- | :--- |
+| **took_damage** | - |  emitted whenever the unit took damage |
+| **gained_health** | - |  emitted whenever the unit gains health |
+| **fully_restored** | - |  emitted whenever the health is restored to max |
+| **died** | - |  emitted when the units HP goes to 0 |
+
+### 🛠️ Methods
+| Method | Arguments | Returns | Description |
+| :--- | :--- | :--- | :--- |
+| **()** | - | `void` |  This class extends from Stats, so any value or function in stats will also be accessible here. What's new here is that it also adds methods for handling HP. |
+| **gain_health()** | `amount : float` | `void` |  method that can be used by other nodes to increase the health of this unit |
+| **fully_restore()** | - | `void` |  method that can be used by other scripts to fully restore this unit |
+| **receive_damage()** | `amount : float` | `void` |  method that can be used by other scripts to apply damage to this unit |
+| **save_hp()** | `entity_name_or_ID : String` | `void` |  method that can be used to save the current HP to a save file |
+| **load_hp()** | `entity_name_or_ID : String` | `float` |  method that can be used to load the current HP from a save file |
 
 ---
 
