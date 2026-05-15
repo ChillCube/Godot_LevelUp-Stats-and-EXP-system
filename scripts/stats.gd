@@ -23,3 +23,4 @@ func load_stats(entity_name_or_ID : String): ## this function can be used load t
 		print("file opened: " + "user://" + entity_name_or_ID + "_stats.save")
 		stats = loaded_stats
 		return loaded_stats
+
