@@ -27,3 +27,8 @@ remove-gd-addon Godot_LevelUp-Stats-and-EXP-system
 ```bash
 push-all-addons
 ```
+
+## Used By
+1 other ChillCube addon(s) depend on this:
+
+- [HealthAndDamageArea](https://github.com/ChillCube/HealthAndDamageArea)
