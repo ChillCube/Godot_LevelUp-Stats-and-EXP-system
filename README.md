@@ -29,6 +29,7 @@ push-all-addons
 ```
 
 ## Used By
-1 other ChillCube addon(s) depend on this:
+2 other ChillCube addon(s) depend on this:
 
+- [ChillCube Tools](https://github.com/ChillCube/ChillCube-Developer-Tools)
 - [HealthAndDamageArea](https://github.com/ChillCube/HealthAndDamageArea)
